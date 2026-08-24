@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from 'react';
-import { X, MessageSquare, Phone, Car, Bike, Sparkles, CheckCircle2 } from 'lucide-react';
+import { X, MessageSquare, Phone, Car, Bike, Sparkles, Calendar, Clock } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/businessData';
 
 export default function BookingModal({ isOpen, onClose, initialService = '' }) {
+  const todayStr = new Date().toISOString().split('T')[0];
+  
   const [vehicleCategory, setVehicleCategory] = useState('Hatchback');
-  const [serviceType, setServiceType] = useState('Inside + Outside Washing');
-  const [notes, setNotes] = useState('');
+  const [serviceType, setServiceType] = useState('Inside + Outside Cleaning');
+  const [bookingDate, setBookingDate] = useState(todayStr);
+  const [timeSlot, setTimeSlot] = useState('10:00 AM - 11:00 AM');
+
+  const timeSlots = [
+    '10:00 AM - 11:00 AM',
+    '11:00 AM - 12:00 PM',
+    '12:00 PM - 01:00 PM',
+    '01:00 PM - 02:00 PM',
+    '02:00 PM - 03:00 PM',
+    '03:00 PM - 04:00 PM',
+    '04:00 PM - 05:00 PM',
+    '05:00 PM - 06:00 PM',
+    '06:00 PM - 07:00 PM',
+    '07:00 PM - 08:00 PM',
+  ];
 
   useEffect(() => {
     if (initialService) {
@@ -16,14 +32,14 @@ export default function BookingModal({ isOpen, onClose, initialService = '' }) {
   if (!isOpen) return null;
 
   const handleWhatsAppBooking = () => {
-    const message = `Hi DR Car Washing, I would like to book a vehicle wash.%0A%0A*Booking Request Details:*%0A- *Vehicle Category:* ${vehicleCategory}%0A- *Service Selected:* ${serviceType}${notes ? `%0A- *Notes/Time:* ${notes}` : ''}%0A%0APlease confirm availability and location directions.`;
+    const message = `Hi DR Car Washing, I would like to book a vehicle wash.%0A%0A*Booking Request Details:*%0A- *Vehicle:* ${vehicleCategory}%0A- *Service:* ${serviceType}%0A- *Date:* ${bookingDate}%0A- *Time Slot:* ${timeSlot}%0A%0APlease confirm availability and location directions.`;
     window.open(`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${message}`, '_blank');
     onClose();
   };
 
   return (
-    <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 animate-fadeIn">
-      <div className="relative w-full max-w-lg bg-[#0c121e] rounded-2xl border border-slate-700 shadow-2xl p-6 sm:p-8 space-y-6">
+    <div className="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-4 animate-fadeIn">
+      <div className="relative w-full max-w-lg bg-[#0c121e] rounded-2xl border border-slate-700 shadow-2xl p-6 sm:p-8 space-y-6 max-h-[90vh] overflow-y-auto">
         
         {/* Close Button */}
         <button
@@ -33,8 +49,15 @@ export default function BookingModal({ isOpen, onClose, initialService = '' }) {
           <X className="w-5 h-5" />
         </button>
 
-        {/* Modal Header */}
-        <div className="space-y-2">
+        {/* Modal Header with Official Logo */}
+        <div className="space-y-3 text-center sm:text-left">
+          <div className="flex items-center justify-center sm:justify-start gap-3">
+            <img
+              src="/logo.png"
+              alt="DR CAR Official Logo"
+              className="h-10 w-auto object-contain drop-shadow-[0_0_12px_rgba(6,182,212,0.5)]"
+            />
+          </div>
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Fast Booking</span>
@@ -50,6 +73,7 @@ export default function BookingModal({ isOpen, onClose, initialService = '' }) {
         {/* Form Fields */}
         <div className="space-y-4">
           
+          {/* Vehicle Type Selector */}
           <div>
             <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
               Select Vehicle Type
@@ -72,7 +96,7 @@ export default function BookingModal({ isOpen, onClose, initialService = '' }) {
                     onClick={() => setVehicleCategory(v.label)}
                     className={`p-2.5 rounded-xl border text-xs font-bold flex items-center gap-2 transition-all ${
                       isSelected
-                        ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300'
+                        ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300 shadow-md shadow-cyan-500/10'
                         : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-white'
                     }`}
                   >
@@ -84,6 +108,7 @@ export default function BookingModal({ isOpen, onClose, initialService = '' }) {
             </div>
           </div>
 
+          {/* Service Package */}
           <div>
             <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
               Cleaning Package
@@ -93,7 +118,7 @@ export default function BookingModal({ isOpen, onClose, initialService = '' }) {
               onChange={(e) => setServiceType(e.target.value)}
               className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
             >
-              <option value="Outer Wash">Outer Wash Only</option>
+              <option value="Outer Wash Only">Outer Wash Only</option>
               <option value="Inside + Outside Cleaning">Inside + Outside Cleaning</option>
               <option value="Bike Wash">Bike Wash</option>
               <option value="Bike Wash + Polish">Bike Wash + Polish</option>
@@ -101,17 +126,38 @@ export default function BookingModal({ isOpen, onClose, initialService = '' }) {
             </select>
           </div>
 
+          {/* Date Selector */}
           <div>
-            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
-              Preferred Date / Time (Optional)
+            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <Calendar className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Select Date</span>
             </label>
             <input
-              type="text"
-              value={notes}
-              onChange={(e) => setNotes(e.target.value)}
-              placeholder="e.g. Today around 3 PM"
+              type="date"
+              min={todayStr}
+              value={bookingDate}
+              onChange={(e) => setBookingDate(e.target.value)}
               className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
             />
+          </div>
+
+          {/* Time Slot Selector (Morning 10 AM to Evening 8 PM) */}
+          <div>
+            <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <Clock className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Time Slot (10:00 AM - 08:00 PM)</span>
+            </label>
+            <select
+              value={timeSlot}
+              onChange={(e) => setTimeSlot(e.target.value)}
+              className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
+            >
+              {timeSlots.map((slot) => (
+                <option key={slot} value={slot}>
+                  {slot}
+                </option>
+              ))}
+            </select>
           </div>
 
         </div>

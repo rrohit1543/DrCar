@@ -26,12 +26,15 @@ export default function Hero({ onOpenBooking }) {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
         {/* Official Brand Logo Feature in Hero */}
-        <div className="mb-6 flex justify-center">
-          <img
-            src="/logo.png"
-            alt="DR CAR Car Washing Centre Official Logo"
-            className="h-24 sm:h-32 md:h-40 w-auto object-contain drop-shadow-[0_0_35px_rgba(6,182,212,0.5)] hover:scale-105 transition-transform duration-500"
-          />
+        <div className="mb-8 flex justify-center">
+          <div className="relative p-4 sm:p-6 rounded-3xl bg-slate-950/70 border border-cyan-500/30 backdrop-blur-md shadow-2xl shadow-cyan-500/20 group hover:border-cyan-400/60 transition-all duration-500">
+            <img
+              src="/logo.png"
+              alt="DR CAR Car Washing Centre Official Logo"
+              className="h-24 sm:h-36 md:h-44 w-auto object-contain drop-shadow-[0_0_30px_rgba(6,182,212,0.6)] group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-indigo-500/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
+          </div>
         </div>
 
         {/* Location Badge */}

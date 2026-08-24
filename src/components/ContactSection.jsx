@@ -3,12 +3,28 @@ import { Phone, MessageSquare, MapPin, Sparkles, Send, Calendar, Clock } from 'l
 import { BUSINESS_INFO } from '../data/businessData';
 
 export default function ContactSection({ prefilledService }) {
-  const [vehicleType, setVehicleType] = useState('Hatchback');
-  const [serviceOption, setServiceOption] = useState('Inside + Outside Washing');
-  const [preferredTime, setPreferredTime] = useState('Today / Morning');
+  const todayStr = new Date().toISOString().split('T')[0];
+
+  const [vehicleType, setVehicleType] = useState('Hatchback Car');
+  const [serviceOption, setServiceOption] = useState('Inside + Outside Cleaning');
+  const [bookingDate, setBookingDate] = useState(todayStr);
+  const [timeSlot, setTimeSlot] = useState('10:00 AM - 11:00 AM');
+
+  const timeSlots = [
+    '10:00 AM - 11:00 AM',
+    '11:00 AM - 12:00 PM',
+    '12:00 PM - 01:00 PM',
+    '01:00 PM - 02:00 PM',
+    '02:00 PM - 03:00 PM',
+    '03:00 PM - 04:00 PM',
+    '04:00 PM - 05:00 PM',
+    '05:00 PM - 06:00 PM',
+    '06:00 PM - 07:00 PM',
+    '07:00 PM - 08:00 PM',
+  ];
 
   const generateWhatsAppUrl = () => {
-    const text = `Hi DR Car Washing, I would like to book a vehicle wash. Please share the available time and service options.%0A%0A*Booking Details:*%0A- *Vehicle:* ${vehicleType}%0A- *Service:* ${serviceOption}%0A- *Preferred Time:* ${preferredTime}`;
+    const text = `Hi DR Car Washing, I would like to book a vehicle wash. Please share the available time and service options.%0A%0A*Booking Details:*%0A- *Vehicle:* ${vehicleType}%0A- *Service:* ${serviceOption}%0A- *Date:* ${bookingDate}%0A- *Time Slot:* ${timeSlot}`;
     return `https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${text}`;
   };
 
@@ -82,83 +98,100 @@ export default function ContactSection({ prefilledService }) {
 
           {/* Interactive Booking Generator Form */}
           <div className="lg:col-span-6">
-            <div className="glass-card rounded-2xl p-8 border border-slate-800 shadow-2xl relative">
+            <div className="glass-card rounded-2xl p-8 border border-slate-800 shadow-2xl relative space-y-4">
               
-              <div className="mb-6 space-y-1">
+              <div className="space-y-1">
                 <h3 className="text-xl font-bold text-white flex items-center gap-2">
                   <Send className="w-5 h-5 text-cyan-400" />
                   Quick WhatsApp Booking
                 </h3>
                 <p className="text-slate-400 text-xs">
-                  Select your vehicle and preferred service to construct your instant WhatsApp booking message.
+                  Select your vehicle, preferred date, and 10 AM - 8 PM time slot to generate your instant WhatsApp message.
                 </p>
               </div>
 
-              <div className="space-y-4">
-                
-                {/* Vehicle Selector */}
-                <div>
-                  <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Vehicle Category
-                  </label>
-                  <select
-                    value={vehicleType}
-                    onChange={(e) => setVehicleType(e.target.value)}
-                    className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
-                  >
-                    <option value="Hatchback Car">Hatchback Car</option>
-                    <option value="Sedan Car">Sedan Car</option>
-                    <option value="SUV / XUV Car">SUV / XUV Car</option>
-                    <option value="Premium Luxury Car">Premium Luxury Car</option>
-                    <option value="Standard Bike">Standard Bike / Scooter</option>
-                    <option value="Premium Bike">Premium Sports Bike</option>
-                  </select>
-                </div>
+              {/* Vehicle Selector */}
+              <div>
+                <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                  Vehicle Category
+                </label>
+                <select
+                  value={vehicleType}
+                  onChange={(e) => setVehicleType(e.target.value)}
+                  className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
+                >
+                  <option value="Hatchback Car">Hatchback Car</option>
+                  <option value="Sedan Car">Sedan Car</option>
+                  <option value="SUV / XUV Car">SUV / XUV Car</option>
+                  <option value="Premium Luxury Car">Premium Luxury Car</option>
+                  <option value="Standard Bike">Standard Bike / Scooter</option>
+                  <option value="Premium Bike">Premium Sports Bike</option>
+                </select>
+              </div>
 
-                {/* Service Selector */}
-                <div>
-                  <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Desired Wash Service
-                  </label>
-                  <select
-                    value={serviceOption}
-                    onChange={(e) => setServiceOption(e.target.value)}
-                    className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
-                  >
-                    <option value="Outer Wash Only">Outer Wash Only</option>
-                    <option value="Inside + Outside Cleaning">Inside + Outside Cleaning</option>
-                    <option value="Standard Bike Wash">Standard Bike Wash</option>
-                    <option value="Bike Wash + Polish">Bike Wash + Polish</option>
-                    <option value="Premium Bike Service">Premium Bike Service</option>
-                  </select>
-                </div>
+              {/* Service Selector */}
+              <div>
+                <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                  Desired Wash Service
+                </label>
+                <select
+                  value={serviceOption}
+                  onChange={(e) => setServiceOption(e.target.value)}
+                  className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
+                >
+                  <option value="Outer Wash Only">Outer Wash Only</option>
+                  <option value="Inside + Outside Cleaning">Inside + Outside Cleaning</option>
+                  <option value="Standard Bike Wash">Standard Bike Wash</option>
+                  <option value="Bike Wash + Polish">Bike Wash + Polish</option>
+                  <option value="Premium Bike Service">Premium Bike Service</option>
+                </select>
+              </div>
 
-                {/* Time Preference */}
+              {/* Date & Time Grid */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
-                    Preferred Time / Day
+                  <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                    <Calendar className="w-3.5 h-3.5 text-cyan-400" />
+                    <span>Select Date</span>
                   </label>
                   <input
-                    type="text"
-                    value={preferredTime}
-                    onChange={(e) => setPreferredTime(e.target.value)}
-                    placeholder="e.g. Today 4:00 PM or Tomorrow morning"
+                    type="date"
+                    min={todayStr}
+                    value={bookingDate}
+                    onChange={(e) => setBookingDate(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
                   />
                 </div>
 
-                {/* Submit to WhatsApp */}
-                <a
-                  href={generateWhatsAppUrl()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full mt-4 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/25 hover:opacity-95 transition-all duration-300 flex items-center justify-center gap-2"
-                >
-                  <MessageSquare className="w-5 h-5" />
-                  <span>Send Booking Request via WhatsApp</span>
-                </a>
-
+                <div>
+                  <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                    <Clock className="w-3.5 h-3.5 text-cyan-400" />
+                    <span>Time Slot (10 AM - 8 PM)</span>
+                  </label>
+                  <select
+                    value={timeSlot}
+                    onChange={(e) => setTimeSlot(e.target.value)}
+                    className="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-white text-sm focus:outline-none focus:border-cyan-500"
+                  >
+                    {timeSlots.map((slot) => (
+                      <option key={slot} value={slot}>
+                        {slot}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
+
+              {/* Submit to WhatsApp */}
+              <a
+                href={generateWhatsAppUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full mt-4 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-slate-950 font-bold text-sm shadow-xl shadow-cyan-500/25 hover:opacity-95 transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <MessageSquare className="w-5 h-5" />
+                <span>Send Booking Request via WhatsApp</span>
+              </a>
 
             </div>
           </div>
