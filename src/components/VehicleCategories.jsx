@@ -73,7 +73,7 @@ export default function VehicleCategories({ onSelectCategory }) {
                 onClick={() => onSelectCategory(cat.title)}
                 className="group relative h-72 rounded-2xl overflow-hidden cursor-pointer border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-xl bg-slate-950/90 flex flex-col justify-between"
               >
-                <div className="h-44 w-full p-3 flex items-center justify-center relative">
+                <div className="h-44 w-full p-4 flex items-center justify-center relative bg-white">
                   <img
                     src={cat.image}
                     alt={cat.title}

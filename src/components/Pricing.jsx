@@ -72,8 +72,8 @@ export default function Pricing({ onBookService }) {
                 )}
 
                 <div>
-                  {/* Category Image Header - Full Size Car Focus */}
-                  <div className="h-48 sm:h-52 rounded-xl overflow-hidden mb-5 relative group border border-slate-700/60 shadow-xl bg-slate-950/90 flex items-center justify-center p-2">
+                  {/* Category Image Header - Full Size Car Focus on Pure White Background */}
+                  <div className="h-48 sm:h-52 rounded-xl overflow-hidden mb-5 relative group border border-slate-700/60 shadow-xl bg-white flex items-center justify-center p-3">
                     <img
                       src={car.image}
                       alt={car.category}
