@@ -7,14 +7,14 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "Hatchbacks",
       startingPrice: "₹349",
       type: "Car",
-      image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800",
+      image: "/multicolor-cars-white-bg.png",
       description: "Swift, i20, WagonR, Tiago & similar compact cars"
     },
     {
       title: "Sedans",
       startingPrice: "₹399",
       type: "Car",
-      image: "/sedan-dzire.png",
+      image: "/red-sedan-white-bg.png",
       description: "Dzire, City, Verna, Slavia & executive sedans"
     },
     {
@@ -28,7 +28,7 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "Premium Cars",
       startingPrice: "₹549",
       type: "Car",
-      image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=800",
+      image: "/black-supercar-white-bg.png",
       description: "BMW, Mercedes-Benz, Audi, Jaguar luxury vehicles"
     },
     {

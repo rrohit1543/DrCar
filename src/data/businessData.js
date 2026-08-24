@@ -20,7 +20,7 @@ export const CAR_PRICING = [
     insideOutsidePrice: 449,
     popular: false,
     icon: "Car",
-    image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800"
+    image: "/multicolor-cars-white-bg.png"
   },
   {
     category: "Sedan",
@@ -29,7 +29,7 @@ export const CAR_PRICING = [
     insideOutsidePrice: 549,
     popular: true,
     icon: "Car",
-    image: "/sedan-dzire.png"
+    image: "/red-sedan-white-bg.png"
   },
   {
     category: "SUV / XUV",
@@ -47,7 +47,7 @@ export const CAR_PRICING = [
     insideOutsidePrice: 699,
     popular: false,
     icon: "ShieldCheck",
-    image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=800"
+    image: "/black-supercar-white-bg.png"
   }
 ];
 
