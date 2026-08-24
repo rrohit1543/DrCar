@@ -10,13 +10,13 @@ export default function About() {
           
           {/* Visual Box / Image Accent */}
           <div className="lg:col-span-5 relative">
-            <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl shadow-cyan-950/40 group">
+            <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl shadow-cyan-950/40 group bg-white p-4 h-[380px] flex items-center justify-center">
               <img
-                src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1000"
-                alt="Shining Dashboard & Interior Detailing"
-                className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+                src="/sedan-virtus-clean.png"
+                alt="DR Car Washing Premium Vehicle Detailing"
+                className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16]/80 via-transparent to-transparent pointer-events-none"></div>
               
               <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 border border-slate-700/80 backdrop-blur-md">
                 <div className="flex items-center gap-3">
