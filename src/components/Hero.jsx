@@ -12,15 +12,15 @@ export default function Hero({ onOpenBooking }) {
 
   return (
     <section id="hero" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-12 pb-20">
-      {/* Background Image with Dark Overlay - Full DR CAR Center Studio Photo */}
+      {/* Background Image - Clean, Sharp, Bright DR CAR Center Studio Photo */}
       <div className="absolute inset-0 z-0">
         <img
           src="/hero-drcar-center.jpg"
           alt="DR CAR Premium Car Washing & Detailing Center"
-          className="w-full h-full object-cover object-center scale-105 opacity-60"
+          className="w-full h-full object-cover object-center scale-100 opacity-95 brightness-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/70 to-[#090d16]/40"></div>
-        <div className="absolute inset-0 bg-radial-glow opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/40 to-[#090d16]/30"></div>
+        <div className="absolute inset-0 bg-radial-glow opacity-30"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -32,12 +32,12 @@ export default function Hero({ onOpenBooking }) {
         </div>
 
         {/* Hero Headline */}
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 max-w-4xl mx-auto leading-[1.1]">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 max-w-4xl mx-auto leading-[1.1] drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)]">
           Your Car Deserves a <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300">Cleaner Look.</span>
         </h1>
 
         {/* Supporting Copy */}
-        <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+        <p className="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto mb-10 font-medium leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
           {BUSINESS_INFO.subtagline}
         </p>
 
