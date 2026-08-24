@@ -12,15 +12,15 @@ export default function Hero({ onOpenBooking }) {
 
   return (
     <section id="hero" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-12 pb-20">
-      {/* Background Image with Dark Overlay */}
+      {/* Background Image with Dark Overlay - Full DR CAR Center Studio Photo */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2000"
-          alt="High-Pressure Foam Car Washing Service"
-          className="w-full h-full object-cover object-center scale-105 opacity-40 blur-[1px]"
+          src="/hero-drcar-center.jpg"
+          alt="DR CAR Premium Car Washing & Detailing Center"
+          className="w-full h-full object-cover object-center scale-105 opacity-60"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/75 to-[#090d16]/50"></div>
-        <div className="absolute inset-0 bg-radial-glow"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/70 to-[#090d16]/40"></div>
+        <div className="absolute inset-0 bg-radial-glow opacity-50"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
