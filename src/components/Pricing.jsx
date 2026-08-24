@@ -72,21 +72,25 @@ export default function Pricing({ onBookService }) {
                 )}
 
                 <div>
-                  {/* Category Image Header */}
-                  <div className="h-36 rounded-xl overflow-hidden mb-5 relative group">
+                  {/* Category Image Header - Full Frame Car Focus */}
+                  <div className="h-48 sm:h-52 rounded-xl overflow-hidden mb-5 relative group border border-slate-700/50 shadow-lg">
                     <img
                       src={car.image}
                       alt={car.category}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 flex items-center gap-2">
-                      <Car className="w-5 h-5 text-cyan-400" />
-                      <span className="text-white font-extrabold text-lg">{car.category}</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+                    
+                    {/* Floating Title Pill */}
+                    <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950/80 border border-cyan-500/40 backdrop-blur-md">
+                        <Car className="w-4 h-4 text-cyan-400" />
+                        <span className="text-white font-extrabold text-base tracking-wide">{car.category}</span>
+                      </div>
                     </div>
                   </div>
 
-                  <p className="text-slate-400 text-xs mb-6 min-h-[32px]">
+                  <p className="text-slate-300 text-xs mb-6 min-h-[32px] leading-relaxed">
                     {car.description}
                   </p>
 
@@ -148,20 +152,20 @@ export default function Pricing({ onBookService }) {
                 className="glass-card rounded-2xl p-6 flex flex-col justify-between border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 hover:-translate-y-1"
               >
                 <div>
-                  <div className="h-44 rounded-xl overflow-hidden mb-6 relative group">
+                  <div className="h-52 rounded-xl overflow-hidden mb-6 relative group border border-slate-700/50 shadow-lg">
                     <img
                       src={bike.image}
                       alt={bike.category}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 flex items-center gap-2">
-                      <Bike className="w-6 h-6 text-cyan-400" />
-                      <span className="text-white font-extrabold text-xl">{bike.category}</span>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
+                    <div className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950/80 border border-cyan-500/40 backdrop-blur-md">
+                      <Bike className="w-5 h-5 text-cyan-400" />
+                      <span className="text-white font-extrabold text-lg">{bike.category}</span>
                     </div>
                   </div>
 
-                  <p className="text-slate-400 text-sm mb-6">
+                  <p className="text-slate-300 text-sm mb-6">
                     {bike.description}
                   </p>
 
