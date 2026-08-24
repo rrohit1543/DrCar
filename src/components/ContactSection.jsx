@@ -55,10 +55,15 @@ export default function ContactSection({ prefilledService }) {
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <span className="text-xs text-slate-400 font-medium block">Phone Number</span>
-                  <a href={`tel:${BUSINESS_INFO.phone}`} className="text-2xl font-extrabold text-white hover:text-cyan-400 transition-colors">
-                    {BUSINESS_INFO.phone}
-                  </a>
+                  <span className="text-xs text-slate-400 font-medium block">Phone Numbers</span>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1">
+                    <a href={`tel:${BUSINESS_INFO.phone}`} className="text-xl sm:text-2xl font-extrabold text-white hover:text-cyan-400 transition-colors">
+                      {BUSINESS_INFO.phone}
+                    </a>
+                    <a href={`tel:${BUSINESS_INFO.phoneSecondary}`} className="text-xl sm:text-2xl font-extrabold text-cyan-300 hover:text-cyan-400 transition-colors">
+                      {BUSINESS_INFO.phoneSecondary}
+                    </a>
+                  </div>
                 </div>
               </div>
 

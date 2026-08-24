@@ -37,11 +37,17 @@ export default function Footer({ onOpenBooking }) {
                 <MapPin className="w-4 h-4 text-cyan-400 shrink-0" />
                 <span>{BUSINESS_INFO.location}</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs text-slate-300">
-                <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
-                <a href={`tel:${BUSINESS_INFO.phone}`} className="hover:text-cyan-400 transition-colors">
-                  {BUSINESS_INFO.phoneFormatted}
-                </a>
+              <div className="flex flex-col gap-1.5 text-xs text-slate-300">
+                <div className="flex items-center gap-2.5">
+                  <Phone className="w-4 h-4 text-cyan-400 shrink-0" />
+                  <a href={`tel:${BUSINESS_INFO.phone}`} className="hover:text-cyan-400 font-bold transition-colors">
+                    {BUSINESS_INFO.phoneFormatted}
+                  </a>
+                  <span className="text-slate-600">|</span>
+                  <a href={`tel:${BUSINESS_INFO.phoneSecondary}`} className="hover:text-cyan-400 font-bold transition-colors">
+                    {BUSINESS_INFO.phoneSecondaryFormatted}
+                  </a>
+                </div>
               </div>
             </div>
           </div>

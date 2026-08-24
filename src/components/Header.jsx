@@ -43,14 +43,16 @@ export default function Header({ onOpenBooking }) {
           </nav>
 
           {/* Desktop Call & Book CTAs */}
-          <div className="hidden lg:flex items-center gap-4">
-            <a
-              href={`tel:${BUSINESS_INFO.phone}`}
-              className="flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white bg-slate-800/60 hover:bg-slate-800 px-4 py-2.5 rounded-xl border border-slate-700/60 transition-all duration-200"
-            >
-              <Phone className="w-4 h-4 text-cyan-400" />
-              <span>{BUSINESS_INFO.phone}</span>
-            </a>
+          <div className="hidden lg:flex items-center gap-3">
+            <div className="flex flex-col text-right text-xs">
+              <a href={`tel:${BUSINESS_INFO.phone}`} className="text-slate-200 hover:text-cyan-400 font-bold flex items-center justify-end gap-1.5 transition-colors">
+                <Phone className="w-3.5 h-3.5 text-cyan-400" />
+                <span>{BUSINESS_INFO.phone}</span>
+              </a>
+              <a href={`tel:${BUSINESS_INFO.phoneSecondary}`} className="text-slate-400 hover:text-cyan-400 font-medium flex items-center justify-end gap-1.5 transition-colors">
+                <span>{BUSINESS_INFO.phoneSecondary}</span>
+              </a>
+            </div>
             
             <button
               onClick={onOpenBooking}

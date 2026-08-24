@@ -2,6 +2,8 @@ export const BUSINESS_INFO = {
   name: "DR Car Washing",
   phone: "6260601543",
   phoneFormatted: "+91 6260601543",
+  phoneSecondary: "6263185058",
+  phoneSecondaryFormatted: "+91 6263185058",
   whatsappNumber: "916260601543",
   location: "Near D Mart, Amrit Palace, Nipania, Indore",
   tagline: "Your Car Deserves a Cleaner Look.",
@@ -22,21 +24,21 @@ export const CAR_PRICING = [
   },
   {
     category: "Sedan",
-    description: "Mid-size & executive sedans (e.g. City, Verna, Dzire, Slavia)",
+    description: "Mid-size & executive sedans (e.g. Dzire, City, Verna, Slavia)",
     outerWashPrice: 399,
     insideOutsidePrice: 549,
     popular: true,
     icon: "Car",
-    image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800"
+    image: "/sedan-dzire.png"
   },
   {
     category: "SUV / XUV",
-    description: "Full-size SUVs, Crossovers & MUVs (e.g. Creta, Thar, Harrier, Fortuner)",
+    description: "Full-size SUVs, Crossovers & MUVs (e.g. XUV 3XO, Creta, Thar, Fortuner)",
     outerWashPrice: 449,
     insideOutsidePrice: 599,
     popular: false,
     icon: "Car",
-    image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800"
+    image: "/xuv-3xo.png"
   },
   {
     category: "Premium Car",
