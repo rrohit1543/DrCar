@@ -93,28 +93,19 @@ export const SERVICES_LIST = [
     id: "bike-wash",
     title: "Bike Washing",
     type: "Bike Service",
-    description: "Affordable cleaning for motorbikes and scooters with an optional polishing service.",
+    description: "Affordable pressure cleaning & snow foam bath for motorbikes and scooters.",
     icon: "Bike",
-    badge: "Bikes • Standard",
-    image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800"
+    badge: "Bikes • Foam Wash",
+    image: "/bike-foam-wash-action.png"
   },
   {
     id: "bike-polish",
     title: "Bike Wash + Polish",
     type: "Bike Service",
-    description: "Clean your bike thoroughly and apply an additional glossy shine polish protection.",
+    description: "Clean your bike thoroughly and apply an additional glossy microfiber shine polish protection.",
     icon: "Shield",
-    badge: "Bikes • Enhanced Polish",
-    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    id: "premium-bike",
-    title: "Premium Bike Service",
-    type: "Bike Service",
-    description: "A higher-level cleaning & detailing option tailored for sports bikes, cruisers, and luxury motorcycles.",
-    icon: "Zap",
-    badge: "Premium Bikes",
-    image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=800"
+    badge: "Bikes • Wash + Polish",
+    image: "/bike-hand-polish-action.png"
   }
 ];
 
