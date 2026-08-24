@@ -16,8 +16,8 @@ export const CAR_PRICING = [
   {
     category: "Hatchback",
     description: "Compact cars (e.g. Swift, i20, WagonR, Tiago)",
-    outerWashPrice: 349,
-    insideOutsidePrice: 449,
+    outerWashPrice: 249,
+    insideOutsidePrice: 349,
     popular: false,
     icon: "Car",
     image: "/red-car-tight.png"
@@ -25,8 +25,8 @@ export const CAR_PRICING = [
   {
     category: "Sedan",
     description: "Mid-size & executive sedans (e.g. Dzire, City, Verna, Slavia)",
-    outerWashPrice: 399,
-    insideOutsidePrice: 549,
+    outerWashPrice: 299,
+    insideOutsidePrice: 449,
     popular: true,
     icon: "Car",
     image: "/sedan-blue-tight.png"
@@ -34,8 +34,8 @@ export const CAR_PRICING = [
   {
     category: "SUV / XUV",
     description: "Full-size SUVs, Crossovers & MUVs (e.g. XUV 3XO, Creta, Thar, Fortuner)",
-    outerWashPrice: 449,
-    insideOutsidePrice: 599,
+    outerWashPrice: 349,
+    insideOutsidePrice: 499,
     popular: false,
     icon: "Car",
     image: "/suv-red-tight.png"
@@ -43,8 +43,8 @@ export const CAR_PRICING = [
   {
     category: "Premium Car",
     description: "Luxury sedans & high-end SUVs (e.g. BMW, Mercedes, Audi, Jaguar)",
-    outerWashPrice: 549,
-    insideOutsidePrice: 699,
+    outerWashPrice: 449,
+    insideOutsidePrice: 599,
     popular: false,
     icon: "ShieldCheck",
     image: "/premium-grey-tight.png"
@@ -167,7 +167,7 @@ export const FAQS = [
   },
   {
     q: "How much does a car wash cost?",
-    a: "Car wash prices start from ₹349 for an exterior wash, depending on the vehicle category."
+    a: "Car wash prices start from ₹249 for an exterior wash, depending on the vehicle category."
   },
   {
     q: "Do you provide inside and outside cleaning?",
