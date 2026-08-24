@@ -5,28 +5,28 @@ export default function VehicleCategories({ onSelectCategory }) {
   const categories = [
     {
       title: "Hatchbacks",
-      startingPrice: "₹249",
+      startingPrice: "₹349",
       type: "Car",
       image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800",
       description: "Swift, i20, WagonR, Tiago & similar compact cars"
     },
     {
       title: "Sedans",
-      startingPrice: "₹299",
+      startingPrice: "₹399",
       type: "Car",
       image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800",
       description: "City, Verna, Dzire, Slavia & executive sedans"
     },
     {
       title: "SUV / XUV",
-      startingPrice: "₹349",
+      startingPrice: "₹449",
       type: "Car",
       image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
       description: "Creta, Thar, Harrier, Fortuner & crossovers"
     },
     {
       title: "Premium Cars",
-      startingPrice: "₹449",
+      startingPrice: "₹549",
       type: "Car",
       image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=800",
       description: "BMW, Mercedes-Benz, Audi, Jaguar luxury vehicles"
