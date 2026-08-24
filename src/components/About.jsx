@@ -6,38 +6,38 @@ export default function About() {
   return (
     <section id="about" className="py-20 relative overflow-hidden bg-[#0a0f1d]/80 border-y border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
-          {/* Visual Box / Official DR CAR Wash Bay Image */}
-          <div className="lg:col-span-5 relative">
-            <div className="relative z-10 rounded-2xl overflow-hidden border border-cyan-500/40 shadow-2xl shadow-cyan-950/50 group h-[380px]">
+          {/* Visual Box / Prominent Official DR CAR Center Building Image */}
+          <div className="lg:col-span-7 relative">
+            <div className="relative z-10 rounded-2xl overflow-hidden border border-cyan-500/50 shadow-2xl shadow-cyan-950/60 group h-[440px] sm:h-[500px] bg-slate-950">
               <img
-                src="/drcar-washing-bay-studio.jpg"
-                alt="DR CAR Premium Car Wash & Detailing Center Bay"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                src="/drcar-center-bay-full.jpg"
+                alt="DR CAR Premium Car Wash & Detailing Center Studio"
+                className="w-full h-full object-cover object-center group-hover:scale-[1.03] transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-70"></div>
               
-              <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/90 border border-slate-700/80 backdrop-blur-md">
+              <div className="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-slate-950/90 border border-slate-700/80 backdrop-blur-md shadow-xl">
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 rounded-lg bg-cyan-500/20 text-cyan-400">
-                    <Award className="w-5 h-5" />
+                    <Award className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="text-white font-bold text-sm">Local Nipania Favorite</h4>
-                    <p className="text-slate-400 text-xs">Trusted Car & Bike Wash Near D Mart</p>
+                    <h4 className="text-white font-extrabold text-base">Local Nipania Favorite</h4>
+                    <p className="text-slate-300 text-xs">Trusted Car & Bike Wash Near D Mart, Amrit Palace</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Glowing Accent Ring */}
-            <div className="absolute -top-6 -left-6 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
-            <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+            <div className="absolute -top-6 -left-6 w-32 h-32 bg-cyan-500/20 rounded-full blur-2xl pointer-events-none"></div>
+            <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-blue-500/20 rounded-full blur-2xl pointer-events-none"></div>
           </div>
 
           {/* About Copy Content */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-5 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-wider">
               <Sparkles className="w-3.5 h-3.5" />
               <span>About Us</span>
