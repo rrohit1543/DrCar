@@ -73,41 +73,46 @@ export const SERVICES_LIST = [
     id: "car-wash",
     title: "Car Washing",
     type: "Car Service",
-    description: "Professional exterior cleaning for your car to remove everyday dust, dirt and road grime.",
+    description: "Professional exterior cleaning & snow foam bath for your car to remove everyday dust, dirt and road grime.",
     icon: "Sparkles",
-    badge: "Cars"
+    badge: "Cars • Foam Wash",
+    image: "/foam-wash-car.png"
   },
   {
     id: "inside-outside",
     title: "Inside + Outside Cleaning",
     type: "Car Service",
-    description: "A more complete cleaning option for customers who want both the exterior and interior of their vehicle cleaned.",
+    description: "Complete interior vacuuming & dashboard polish spray treatment combined with a sparkling exterior foam wash.",
     icon: "Car",
-    badge: "Cars - Complete"
+    badge: "Cars • Inside + Out",
+    image: "/dashboard-polish.png"
   },
   {
     id: "bike-wash",
     title: "Bike Washing",
     type: "Bike Service",
-    description: "Affordable cleaning for bikes with an optional polishing service.",
+    description: "Affordable cleaning for motorbikes and scooters with an optional polishing service.",
     icon: "Bike",
-    badge: "Bikes"
+    badge: "Bikes • Standard",
+    image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "bike-polish",
     title: "Bike Wash + Polish",
     type: "Bike Service",
-    description: "Clean your bike and give it an additional polished finish.",
+    description: "Clean your bike thoroughly and apply an additional glossy shine polish protection.",
     icon: "Shield",
-    badge: "Bikes - Enhanced"
+    badge: "Bikes • Enhanced Polish",
+    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "premium-bike",
     title: "Premium Bike Service",
     type: "Bike Service",
-    description: "A higher-level bike cleaning option with an optional polish.",
+    description: "A higher-level cleaning & detailing option tailored for sports bikes, cruisers, and luxury motorcycles.",
     icon: "Zap",
-    badge: "Premium Bikes"
+    badge: "Premium Bikes",
+    image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=800"
   }
 ];
 
@@ -191,29 +196,29 @@ export const FAQS = [
 
 export const GALLERY_ITEMS = [
   {
-    title: "Thick Snow Foam Bath (Red Car)",
+    title: "Snow Foam Bath Wash",
     category: "Foam Wash",
-    img: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1200"
+    img: "/foam-wash-car.png"
   },
   {
-    title: "Rotary Paint Protection & Polish (Electric Blue)",
+    title: "Dashboard Spray Polish & Interior Cleaning",
+    category: "Interior Polish",
+    img: "/dashboard-polish.png"
+  },
+  {
+    title: "Rotary Paint Protection & Body Polish",
     category: "Car Polish",
     img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    title: "High Gloss Body Wax & Polish (Bright Yellow)",
+    title: "High Gloss Body Wax & Polish Treatment",
     category: "High Gloss Polish",
     img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    title: "High Pressure Water Jet Wash (Deep Black)",
+    title: "High Pressure Water Jet Wash",
     category: "Pressure Wash",
     img: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200"
-  },
-  {
-    title: "Shining Dashboard & Leather Interior Care (Pure White)",
-    category: "Car Interior",
-    img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1200"
   },
   {
     title: "Detail Bike Foam Wash & Gloss Finish",
