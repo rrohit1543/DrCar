@@ -37,13 +37,13 @@ export default function SpecialBanner({ onOpenBooking }) {
           </div>
 
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group border border-cyan-500/40">
               <img
-                src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1000"
-                alt="Professional Car Polishing and Shine Treatment"
+                src="/foam-spray-mustang.png"
+                alt="High Pressure Foam Spray Car Wash Bay Action"
                 className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-70"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-60"></div>
             </div>
           </div>
 
