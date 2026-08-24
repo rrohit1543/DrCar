@@ -7,7 +7,7 @@ export const BUSINESS_INFO = {
   tagline: "Your Car Deserves a Cleaner Look.",
   subtagline: "Professional car and bike washing at affordable prices in Nipania, Indore. Give your vehicle the clean, fresh look it deserves.",
   slogan: "Quality Cleaning. Honest Pricing. Better-Looking Vehicles.",
-  googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=DR+Car+Washing+Near+D+Mart+Amrit+Palace+Nipania+Indore",
+  googleMapsUrl: "https://share.google/b3Lg3VDR8h5IOpmN2",
 };
 
 export const CAR_PRICING = [
