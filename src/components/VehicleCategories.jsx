@@ -14,15 +14,15 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "Sedans",
       startingPrice: "₹399",
       type: "Car",
-      image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800",
-      description: "City, Verna, Dzire, Slavia & executive sedans"
+      image: "/sedan-dzire.png",
+      description: "Dzire, City, Verna, Slavia & executive sedans"
     },
     {
       title: "SUV / XUV",
       startingPrice: "₹449",
       type: "Car",
-      image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800",
-      description: "Creta, Thar, Harrier, Fortuner & crossovers"
+      image: "/xuv-3xo.png",
+      description: "XUV 3XO, Creta, Thar, Fortuner & crossovers"
     },
     {
       title: "Premium Cars",
@@ -71,19 +71,19 @@ export default function VehicleCategories({ onSelectCategory }) {
               <div
                 key={idx}
                 onClick={() => onSelectCategory(cat.title)}
-                className="group relative h-72 rounded-2xl overflow-hidden cursor-pointer border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-xl"
+                className="group relative h-72 rounded-2xl overflow-hidden cursor-pointer border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-xl bg-slate-950/90 flex flex-col justify-between"
               >
-                <img
-                  src={cat.image}
-                  alt={cat.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/60 to-transparent"></div>
-
-                <div className="absolute top-4 right-4">
-                  <span className="w-8 h-8 rounded-full bg-slate-900/80 border border-slate-700 flex items-center justify-center text-slate-300 group-hover:text-cyan-400 group-hover:border-cyan-500 transition-colors">
-                    <ArrowUpRight className="w-4 h-4" />
-                  </span>
+                <div className="h-44 w-full p-3 flex items-center justify-center relative">
+                  <img
+                    src={cat.image}
+                    alt={cat.title}
+                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-4 right-4">
+                    <span className="w-8 h-8 rounded-full bg-slate-900/90 border border-slate-700 flex items-center justify-center text-slate-300 group-hover:text-cyan-400 group-hover:border-cyan-500 transition-colors shadow-md">
+                      <ArrowUpRight className="w-4 h-4" />
+                    </span>
+                  </div>
                 </div>
 
                 <div className="absolute bottom-6 left-6 right-6 space-y-2">

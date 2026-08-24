@@ -72,20 +72,19 @@ export default function Pricing({ onBookService }) {
                 )}
 
                 <div>
-                  {/* Category Image Header - Full Frame Car Focus */}
-                  <div className="h-48 sm:h-52 rounded-xl overflow-hidden mb-5 relative group border border-slate-700/50 shadow-lg">
+                  {/* Category Image Header - Full Size Car Focus */}
+                  <div className="h-48 sm:h-52 rounded-xl overflow-hidden mb-5 relative group border border-slate-700/60 shadow-xl bg-slate-950/90 flex items-center justify-center p-2">
                     <img
                       src={car.image}
                       alt={car.category}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
                     
                     {/* Floating Title Pill */}
                     <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950/80 border border-cyan-500/40 backdrop-blur-md">
+                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950/90 border border-cyan-500/50 backdrop-blur-md shadow-lg">
                         <Car className="w-4 h-4 text-cyan-400" />
-                        <span className="text-white font-extrabold text-base tracking-wide">{car.category}</span>
+                        <span className="text-white font-extrabold text-sm sm:text-base tracking-wide">{car.category}</span>
                       </div>
                     </div>
                   </div>
