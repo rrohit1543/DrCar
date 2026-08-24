@@ -8,20 +8,20 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Visual Box / Image Accent */}
+          {/* Visual Box / Official DR CAR Wash Bay Image */}
           <div className="lg:col-span-5 relative">
-            <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl shadow-cyan-950/40 group bg-white p-4 h-[380px] flex items-center justify-center">
+            <div className="relative z-10 rounded-2xl overflow-hidden border border-cyan-500/40 shadow-2xl shadow-cyan-950/50 group h-[380px]">
               <img
-                src="/sedan-virtus-clean.png"
-                alt="DR Car Washing Premium Vehicle Detailing"
-                className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
+                src="/drcar-washing-bay-studio.jpg"
+                alt="DR CAR Premium Car Wash & Detailing Center Bay"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16]/80 via-transparent to-transparent pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80"></div>
               
-              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 border border-slate-700/80 backdrop-blur-md">
+              <div className="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl bg-slate-950/90 border border-slate-700/80 backdrop-blur-md">
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 rounded-lg bg-cyan-500/20 text-cyan-400">
-                    <Award className="w-6 h-6" />
+                    <Award className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-white font-bold text-sm">Local Nipania Favorite</h4>
