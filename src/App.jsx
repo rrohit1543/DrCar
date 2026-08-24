@@ -8,6 +8,7 @@ import VehicleCategories from './components/VehicleCategories';
 import WhyChooseUs from './components/WhyChooseUs';
 import HowItWorks from './components/HowItWorks';
 import SpecialBanner from './components/SpecialBanner';
+import BeforeAfterSection from './components/BeforeAfterSection';
 import Gallery from './components/Gallery';
 import LocationSection from './components/LocationSection';
 import FAQSection from './components/FAQSection';
@@ -48,6 +49,7 @@ export default function App() {
         <WhyChooseUs />
         <HowItWorks onOpenBooking={() => handleOpenBooking()} />
         <SpecialBanner onOpenBooking={() => handleOpenBooking()} />
+        <BeforeAfterSection onOpenBooking={() => handleOpenBooking()} />
         <Gallery />
         <LocationSection />
         <FAQSection />
