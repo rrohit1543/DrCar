@@ -22,11 +22,13 @@ export default function Header({ onOpenBooking }) {
           
           {/* Brand Logo */}
           <a href="#hero" className="flex items-center gap-3 group">
-            <img
-              src="/logo.png"
-              alt="DR CAR Car Washing Centre Logo"
-              className="h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_12px_rgba(6,182,212,0.4)]"
-            />
+            <div className="relative p-1.5 rounded-xl bg-slate-950/80 border border-cyan-500/30 group-hover:border-cyan-400/60 transition-all duration-300 shadow-md shadow-cyan-500/20">
+              <img
+                src="/logo.png"
+                alt="DR CAR Car Washing Centre Official Logo"
+                className="h-11 sm:h-14 w-auto object-contain rounded-lg group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_15px_rgba(6,182,212,0.5)]"
+              />
+            </div>
           </a>
 
           {/* Desktop Navigation Links */}
