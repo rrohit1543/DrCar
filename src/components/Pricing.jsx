@@ -151,14 +151,13 @@ export default function Pricing({ onBookService }) {
                 className="glass-card rounded-2xl p-6 flex flex-col justify-between border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 hover:-translate-y-1"
               >
                 <div>
-                  <div className="h-52 rounded-xl overflow-hidden mb-6 relative group border border-slate-700/50 shadow-lg">
+                  <div className="h-52 rounded-xl overflow-hidden mb-6 relative group border border-slate-700/60 shadow-lg bg-white flex items-center justify-center p-1">
                     <img
                       src={bike.image}
                       alt={bike.category}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain object-center scale-110 group-hover:scale-125 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent"></div>
-                    <div className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950/80 border border-cyan-500/40 backdrop-blur-md">
+                    <div className="absolute bottom-3 left-3 flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-950/90 border border-cyan-500/50 backdrop-blur-md shadow-lg">
                       <Bike className="w-5 h-5 text-cyan-400" />
                       <span className="text-white font-extrabold text-lg">{bike.category}</span>
                     </div>

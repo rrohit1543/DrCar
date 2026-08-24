@@ -35,14 +35,14 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "Bikes",
       startingPrice: "₹80",
       type: "Bike",
-      image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800",
-      description: "Standard motorcycles & scooters"
+      image: "/bike-pulsar-tight.png",
+      description: "Standard commuter bikes & scooters"
     },
     {
       title: "Premium Bikes",
       startingPrice: "₹120",
       type: "Bike",
-      image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=800",
+      image: "/bike-bullet-tight.png",
       description: "Royal Enfield, Duke, Ninja & cruiser bikes"
     }
   ];

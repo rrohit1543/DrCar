@@ -58,7 +58,7 @@ export const BIKE_PRICING = [
     washPrice: 80,
     withPolishPrice: 100,
     icon: "Bike",
-    image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800"
+    image: "/bike-pulsar-tight.png"
   },
   {
     category: "Premium Bike",
@@ -66,7 +66,7 @@ export const BIKE_PRICING = [
     washPrice: 120,
     withPolishPrice: 150,
     icon: "Bike",
-    image: "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=800"
+    image: "/bike-bullet-tight.png"
   }
 ];
 
