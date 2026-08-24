@@ -7,28 +7,28 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "Hatchbacks",
       startingPrice: "₹349",
       type: "Car",
-      image: "/red-car-isolated-clean.png",
+      image: "/red-car-tight.png",
       description: "Swift, i20, WagonR, Tiago & similar compact cars"
     },
     {
       title: "Sedans",
       startingPrice: "₹399",
       type: "Car",
-      image: "/sedan-electric-blue-clean.png",
+      image: "/sedan-blue-tight.png",
       description: "Dzire, City, Verna, Slavia & executive sedans"
     },
     {
       title: "SUV / XUV",
       startingPrice: "₹449",
       type: "Car",
-      image: "/suv-red-clean.png",
+      image: "/suv-red-tight.png",
       description: "XUV 3XO, Creta, Thar, Fortuner & crossovers"
     },
     {
       title: "Premium Cars",
       startingPrice: "₹549",
       type: "Car",
-      image: "/premium-dark-grey-clean.png",
+      image: "/premium-grey-tight.png",
       description: "BMW, Mercedes-Benz, Audi, Jaguar luxury vehicles"
     },
     {
@@ -73,11 +73,11 @@ export default function VehicleCategories({ onSelectCategory }) {
                 onClick={() => onSelectCategory(cat.title)}
                 className="group relative h-72 rounded-2xl overflow-hidden cursor-pointer border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 shadow-xl bg-slate-950/90 flex flex-col justify-between"
               >
-                <div className="h-44 w-full p-4 flex items-center justify-center relative bg-white">
+                <div className="h-44 w-full p-1 flex items-center justify-center relative bg-white overflow-hidden">
                   <img
                     src={cat.image}
                     alt={cat.title}
-                    className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-500"
+                    className="max-h-full max-w-full object-contain scale-110 group-hover:scale-125 transition-transform duration-500"
                   />
                   <div className="absolute top-4 right-4">
                     <span className="w-8 h-8 rounded-full bg-slate-900/90 border border-slate-700 flex items-center justify-center text-slate-300 group-hover:text-cyan-400 group-hover:border-cyan-500 transition-colors shadow-md">

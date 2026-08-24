@@ -72,12 +72,12 @@ export default function Pricing({ onBookService }) {
                 )}
 
                 <div>
-                  {/* Category Image Header - Full Size Car Focus on Pure White Background */}
-                  <div className="h-48 sm:h-52 rounded-xl overflow-hidden mb-5 relative group border border-slate-700/60 shadow-xl bg-white flex items-center justify-center p-3">
+                  {/* Category Image Header - Zoomed In Car Focus on Pure White Background */}
+                  <div className="h-44 sm:h-48 rounded-xl overflow-hidden mb-5 relative group border border-slate-700/60 shadow-xl bg-white flex items-center justify-center p-1">
                     <img
                       src={car.image}
                       alt={car.category}
-                      className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-contain object-center scale-110 group-hover:scale-125 transition-transform duration-500"
                     />
                     
                     {/* Floating Title Pill */}
