@@ -7,7 +7,7 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "Hatchbacks",
       startingPrice: "₹349",
       type: "Car",
-      image: "/multicolor-cars-white-bg.png",
+      image: "/hatchback-white-bg.png",
       description: "Swift, i20, WagonR, Tiago & similar compact cars"
     },
     {
@@ -21,14 +21,14 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "SUV / XUV",
       startingPrice: "₹449",
       type: "Car",
-      image: "/xuv-3xo.png",
+      image: "/xuv-3xo-white.png",
       description: "XUV 3XO, Creta, Thar, Fortuner & crossovers"
     },
     {
       title: "Premium Cars",
       startingPrice: "₹549",
       type: "Car",
-      image: "/black-supercar-white-bg.png",
+      image: "/black-supercar-solid-white.png",
       description: "BMW, Mercedes-Benz, Audi, Jaguar luxury vehicles"
     },
     {

@@ -20,7 +20,7 @@ export const CAR_PRICING = [
     insideOutsidePrice: 449,
     popular: false,
     icon: "Car",
-    image: "/multicolor-cars-white-bg.png"
+    image: "/hatchback-white-bg.png"
   },
   {
     category: "Sedan",
@@ -38,7 +38,7 @@ export const CAR_PRICING = [
     insideOutsidePrice: 599,
     popular: false,
     icon: "Car",
-    image: "/xuv-3xo.png"
+    image: "/xuv-3xo-white.png"
   },
   {
     category: "Premium Car",
@@ -47,7 +47,7 @@ export const CAR_PRICING = [
     insideOutsidePrice: 699,
     popular: false,
     icon: "ShieldCheck",
-    image: "/black-supercar-white-bg.png"
+    image: "/black-supercar-solid-white.png"
   }
 ];
 
