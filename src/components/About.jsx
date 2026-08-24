@@ -12,8 +12,8 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <div className="relative z-10 rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl shadow-cyan-950/40 group">
               <img
-                src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1000"
-                alt="Inside Out Car Washing & Care"
+                src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1000"
+                alt="Shining Dashboard & Interior Detailing"
                 className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-80"></div>

@@ -191,33 +191,33 @@ export const FAQS = [
 
 export const GALLERY_ITEMS = [
   {
-    title: "Snow Foam Bath Wash",
+    title: "Thick Snow Foam Bath (Red Car)",
     category: "Foam Wash",
-    img: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200"
+    img: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    title: "Rotary Machine Paint Polishing",
+    title: "Rotary Paint Protection & Polish (Electric Blue)",
     category: "Car Polish",
-    img: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1200"
-  },
-  {
-    title: "High Pressure Water Jet Rinse",
-    category: "Pressure Wash",
     img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    title: "Deep Interior Vacuuming & Dashboard Care",
+    title: "High Gloss Body Wax & Polish (Bright Yellow)",
+    category: "High Gloss Polish",
+    img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    title: "High Pressure Water Jet Wash (Deep Black)",
+    category: "Pressure Wash",
+    img: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    title: "Shining Dashboard & Leather Interior Care (Pure White)",
     category: "Car Interior",
     img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    title: "Bike Cleaning & Gloss Polish",
+    title: "Detail Bike Foam Wash & Gloss Finish",
     category: "Bike Wash",
     img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=1200"
-  },
-  {
-    title: "Spotless Mirror Shine Finish",
-    category: "Clean Vehicles",
-    img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=1200"
   }
 ];

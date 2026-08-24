@@ -11,34 +11,22 @@ export default function Hero({ onOpenBooking }) {
   ];
 
   return (
-    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-8 pb-20">
+    <section id="hero" className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-12 pb-20">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=2000"
+          src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2000"
           alt="High-Pressure Foam Car Washing Service"
-          className="w-full h-full object-cover object-center scale-105 opacity-35 blur-[1px]"
+          className="w-full h-full object-cover object-center scale-105 opacity-40 blur-[1px]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/80 to-[#090d16]/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/75 to-[#090d16]/50"></div>
         <div className="absolute inset-0 bg-radial-glow"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Official Brand Logo Feature in Hero */}
-        <div className="mb-8 flex justify-center">
-          <div className="relative p-4 sm:p-6 rounded-3xl bg-slate-950/70 border border-cyan-500/30 backdrop-blur-md shadow-2xl shadow-cyan-500/20 group hover:border-cyan-400/60 transition-all duration-500">
-            <img
-              src="/logo.png"
-              alt="DR CAR Car Washing Centre Official Logo"
-              className="h-24 sm:h-36 md:h-44 w-auto object-contain drop-shadow-[0_0_30px_rgba(6,182,212,0.6)] group-hover:scale-105 transition-transform duration-500"
-            />
-            <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-indigo-500/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
-          </div>
-        </div>
-
         {/* Location Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold mb-6 backdrop-blur-md shadow-lg shadow-cyan-950/50 animate-float">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs sm:text-sm font-semibold mb-8 backdrop-blur-md shadow-lg shadow-cyan-950/60 animate-float">
           <MapPin className="w-4 h-4 text-cyan-400 animate-pulse" />
           <span>{BUSINESS_INFO.location}</span>
         </div>
