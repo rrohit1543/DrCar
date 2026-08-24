@@ -191,33 +191,33 @@ export const FAQS = [
 
 export const GALLERY_ITEMS = [
   {
-    title: "Exterior Foam Wash",
-    category: "Car Wash",
-    img: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=800"
+    title: "Snow Foam Bath Wash",
+    category: "Foam Wash",
+    img: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    title: "Interior Vacuuming & Dusting",
-    category: "Car Interior",
-    img: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    title: "High Pressure Rinsing",
-    category: "Pressure Wash",
-    img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    title: "Bike Cleaning & Detail Wash",
-    category: "Bike Wash",
-    img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    title: "Shiny Finish & Tyre Dressing",
+    title: "Rotary Machine Paint Polishing",
     category: "Car Polish",
-    img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=800"
+    img: "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1200"
   },
   {
-    title: "Spotless Clean Finish",
+    title: "High Pressure Water Jet Rinse",
+    category: "Pressure Wash",
+    img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    title: "Deep Interior Vacuuming & Dashboard Care",
+    category: "Car Interior",
+    img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    title: "Bike Cleaning & Gloss Polish",
+    category: "Bike Wash",
+    img: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=1200"
+  },
+  {
+    title: "Spotless Mirror Shine Finish",
     category: "Clean Vehicles",
-    img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=800"
+    img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=1200"
   }
 ];

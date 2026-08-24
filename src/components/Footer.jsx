@@ -21,12 +21,11 @@ export default function Footer({ onOpenBooking }) {
           {/* Brand Col */}
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-blue-500 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                <Car className="w-5 h-5 text-white" />
-              </div>
-              <span className="text-xl font-extrabold tracking-tight text-white">
-                DR CAR <span className="text-cyan-400">WASHING</span>
-              </span>
+              <img
+                src="/logo.png"
+                alt="DR CAR Car Washing Centre Logo"
+                className="h-14 w-auto object-contain drop-shadow-[0_0_15px_rgba(6,182,212,0.4)]"
+              />
             </div>
 
             <p className="text-slate-400 text-sm max-w-sm leading-relaxed">

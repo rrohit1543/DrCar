@@ -39,8 +39,8 @@ export default function SpecialBanner({ onOpenBooking }) {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-slate-700/80 shadow-2xl group">
               <img
-                src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&q=80&w=1000"
-                alt="Clean Car Polish Drive"
+                src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&q=80&w=1000"
+                alt="Professional Car Polishing and Shine Treatment"
                 className="w-full h-[320px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-transparent to-transparent opacity-70"></div>

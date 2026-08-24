@@ -11,13 +11,13 @@ export default function Hero({ onOpenBooking }) {
   ];
 
   return (
-    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-12 pb-20">
+    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-8 pb-20">
       {/* Background Image with Dark Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&q=80&w=2000"
-          alt="Premium Dark Car Washing Service"
-          className="w-full h-full object-cover object-center scale-105 opacity-30 blur-[1px]"
+          src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=2000"
+          alt="High-Pressure Foam Car Washing Service"
+          className="w-full h-full object-cover object-center scale-105 opacity-35 blur-[1px]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#090d16] via-[#090d16]/80 to-[#090d16]/60"></div>
         <div className="absolute inset-0 bg-radial-glow"></div>
@@ -25,14 +25,23 @@ export default function Hero({ onOpenBooking }) {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
+        {/* Official Brand Logo Feature in Hero */}
+        <div className="mb-6 flex justify-center">
+          <img
+            src="/logo.png"
+            alt="DR CAR Car Washing Centre Official Logo"
+            className="h-24 sm:h-32 md:h-40 w-auto object-contain drop-shadow-[0_0_35px_rgba(6,182,212,0.5)] hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
         {/* Location Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold mb-8 backdrop-blur-md shadow-lg shadow-cyan-950/50 animate-float">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold mb-6 backdrop-blur-md shadow-lg shadow-cyan-950/50 animate-float">
           <MapPin className="w-4 h-4 text-cyan-400 animate-pulse" />
           <span>{BUSINESS_INFO.location}</span>
         </div>
 
         {/* Hero Headline */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-white mb-6 max-w-4xl mx-auto leading-[1.1]">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 max-w-4xl mx-auto leading-[1.1]">
           Your Car Deserves a <span className="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-300">Cleaner Look.</span>
         </h1>
 
