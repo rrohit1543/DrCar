@@ -7,7 +7,7 @@ export default function VehicleCategories({ onSelectCategory }) {
       title: "Hatchbacks",
       startingPrice: "₹349",
       type: "Car",
-      image: "/hatchback-teal-clean.png",
+      image: "/red-car-isolated-clean.png",
       description: "Swift, i20, WagonR, Tiago & similar compact cars"
     },
     {

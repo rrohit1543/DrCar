@@ -20,7 +20,7 @@ export const CAR_PRICING = [
     insideOutsidePrice: 449,
     popular: false,
     icon: "Car",
-    image: "/hatchback-teal-clean.png"
+    image: "/red-car-isolated-clean.png"
   },
   {
     category: "Sedan",
