@@ -11,8 +11,6 @@ import SpecialBanner from './components/SpecialBanner';
 import BeforeAfterSection from './components/BeforeAfterSection';
 import Gallery from './components/Gallery';
 import LocationSection from './components/LocationSection';
-import FAQSection from './components/FAQSection';
-import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -52,8 +50,6 @@ export default function App() {
         <BeforeAfterSection onOpenBooking={() => handleOpenBooking()} />
         <Gallery />
         <LocationSection />
-        <FAQSection />
-        <TestimonialsSection />
         <ContactSection prefilledService={selectedService} />
       </main>
 

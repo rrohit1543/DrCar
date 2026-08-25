@@ -11,7 +11,6 @@ export default function Header({ onOpenBooking }) {
     { name: 'Pricing', href: '#pricing' },
     { name: 'Why Us', href: '#why-us' },
     { name: 'About', href: '#about' },
-    { name: 'FAQ', href: '#faq' },
     { name: 'Contact', href: '#contact' },
   ];
 
